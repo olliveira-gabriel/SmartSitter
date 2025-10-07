@@ -7,19 +7,23 @@ html, body {
   overflow: hidden; 
 }
 
-.login-bg {
+.cadastro-bg {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-top: 100px; 
 }
 
-.login-card {
+.cadastro-card {
   padding: 40px 32px;
   border-radius: 8px;
   width: 100%;
   text-align: center;
 }
 
-.login-card h1 {
+.cadastro-card h1 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 28px;
@@ -47,21 +51,22 @@ html, body {
   outline: none;
   margin-bottom: 4px;
 }
-
-.forgot {
-  text-align: right;
-  font-size: 0.9rem;
-}
-
-.forgot a {
-  color: #747A7C;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.forgot a:hover {
-  color: #6a7072;
-}
+.data-niver {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .data-niver input {
+    width: 100%;
+    flex: 1;
+    text-align: left;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    padding: 12px 2;
+    font-size: 1rem;
+    outline: none;
+  }
 
 .btn-primary {
   width: 100%;
@@ -75,12 +80,12 @@ html, body {
   margin-top: 12px;
   margin-bottom: 12px;
   cursor: pointer;
-  transition: background 0.2s;
 }
-
 .btn-primary:hover {
-  background: #57b0d6;
-}
+    background: #80C4DF;
+    opacity: 1;
+    cursor: pointer;
+  }
 
 .btn-secondary {
   width: 100%;
@@ -95,20 +100,27 @@ html, body {
   cursor: pointer;
   transition: background 0.2s;
 }
-
-.register {
-  font-size: 0.95rem;
-  color: #777;
-  margin-top: 14px;
-}
-
-.register a {
-  color: #80C4DF;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.register a:hover {
-  color: #57b0d6;
-}
+.texto-privacidade {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #7a7a7a; 
+    line-height: 1.4;
+  }
+  
+  .texto-privacidade a {
+    color: #6ec1e4; 
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .texto-privacidade a:hover {
+    color: #4aa3d1; 
+    text-decoration: underline;
+  }
+  
+  .texto-privacidade p {
+    margin: 0; 
+  }
+  

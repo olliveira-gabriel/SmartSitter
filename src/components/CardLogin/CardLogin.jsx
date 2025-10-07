@@ -6,7 +6,7 @@ function CardLogin() {
   return (
     <div className="login-bg">
       <Container>
-        <Row className="justify-content-center align-items-center min-vh-100">
+        <Row className="justify-content-center align-items-center vh-100">
           <Col xs={12} sm={8} md={6} lg={5} xl={4}>
             <div className="login-card">
               <h1>Entrar</h1>
@@ -18,6 +18,7 @@ function CardLogin() {
                     placeholder="Digite aqui seu email"
                     id="email"
                     name="email"
+                    autoComplete='off'
                   />
                 </div>
                 <div className="form-group">
