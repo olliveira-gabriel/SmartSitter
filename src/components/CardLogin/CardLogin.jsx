@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './CardLogin.css';
 
 function CardLogin() {
@@ -36,7 +37,7 @@ function CardLogin() {
                 <button type="submit" className="btn-primary">Entrar</button>
                 <button type="button" className="btn-secondary">Voltar</button>
                 <p className="register">
-                  Não possui conta? <a href="#">Cadastre-se</a>
+                    Não possui conta? <Link to="/cadastro">Cadastre-se</Link>
                 </p>
               </form>
             </div>

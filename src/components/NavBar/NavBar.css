@@ -1,0 +1,26 @@
+/* Navbar fundo escuro */
+.custom-navbar {
+    background-color: #1B1D1E !important;
+    padding: 0.8rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+  .brand-logo {
+    height: 35px;
+    margin-right: 8px;
+  }
+
+  .nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-link-custom {
+    font-size: 16px;
+    color: #fff !important;
+    transition: color 0.2s ease;
+  }

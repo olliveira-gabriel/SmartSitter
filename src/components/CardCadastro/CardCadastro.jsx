@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../CardCadastro/CardCadastro.css';
+import { useNavigate } from 'react-router-dom';
 
 function CardCadastro() {
-
+  const navigate = useNavigate();
   const [etapa, setEtapa] = useState(1);
-
 
   const [dadosFormulario, setDadosFormulario] = useState({
     nome: '',
@@ -24,7 +24,6 @@ function CardCadastro() {
     setDadosFormulario({ ...dadosFormulario, [name]: value });
   };
 
-
   const irParaProximaEtapa = (evento) => {
     evento.preventDefault();
     setEtapa(2);
@@ -34,6 +33,12 @@ function CardCadastro() {
   const enviarFormulario = (evento) => {
     evento.preventDefault();
     console.log('Dados enviados:', dadosFormulario);
+    navigate('/home');
+  };
+
+
+  const handleSair = () => {
+    navigate('/login'); 
   };
 
   return (
@@ -45,7 +50,6 @@ function CardCadastro() {
               <h1>Criar Conta</h1>
 
               {etapa === 1 ? (
-
                 <form onSubmit={irParaProximaEtapa}>
                   <div className="form-group">
                     <label htmlFor="nome">Nome</label>
@@ -109,11 +113,18 @@ function CardCadastro() {
                     </div>
                   </div>
 
-                  <button type="submit" className="btn-primary">Próximo</button>
-                  <button type="button" className="btn-secondary">Sair</button>
+                  <button type="submit" className="btn-primary">
+                    Próximo
+                  </button>
+                  <button
+                    type="button"
+                    className="btn-secondary"
+                    onClick={handleSair}
+                  >
+                    Sair
+                  </button>
                 </form>
               ) : (
-
                 <form onSubmit={enviarFormulario}>
                   <div className="form-group">
                     <label htmlFor="email">Email</label>
@@ -154,7 +165,9 @@ function CardCadastro() {
                     />
                   </div>
 
-                  <button type="submit" className="btn-primary">Concluir</button>
+                  <button type="submit" className="btn-primary">
+                    Concluir
+                  </button>
                   <button
                     type="button"
                     className="btn-secondary"
@@ -162,17 +175,26 @@ function CardCadastro() {
                   >
                     Voltar
                   </button>
+
                   <div className="texto-privacidade">
-                  <p>
-                    Leia nossas{' '}
-                    <a href="/politica-privacidade" target="_blank" rel="noopener noreferrer">
-                    Políticas de Privacidade
-                    </a>{' '}
-                    e{' '}<br/>
-                    <a href="/termos-uso" target="_blank" rel="noopener noreferrer">
-                    Termos de Uso
-                    </a>
-                </p>
+                    <p>
+                      Leia nossas{' '}
+                      <a
+                        href="/politica-privacidade"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Políticas de Privacidade
+                      </a>{' '}
+                      e <br />
+                      <a
+                        href="/termos-uso"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Termos de Uso
+                      </a>
+                    </p>
                   </div>
                 </form>
               )}

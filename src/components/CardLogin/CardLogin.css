@@ -12,7 +12,7 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-.login-card {
+.login-card { 
   padding: 40px 32px;
   border-radius: 8px;
   width: 100%;
@@ -51,6 +51,7 @@ html, body {
 .forgot {
   text-align: right;
   font-size: 0.9rem;
+  margin-top: 10px;
 }
 
 .forgot a {
@@ -96,17 +97,12 @@ html, body {
   transition: background 0.2s;
 }
 
-.register {
-  font-size: 0.95rem;
-  color: #777;
-  margin-top: 14px;
-}
-
 .register a {
-  color: #80C4DF;
+  color: #57b0d6;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
+}
+.register a:hover {
+  text-decoration: underline;
 }
 
 .register a:hover {
