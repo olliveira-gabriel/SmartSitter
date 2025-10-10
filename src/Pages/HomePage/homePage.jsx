@@ -6,6 +6,7 @@ function homePage() {
   return (
     <div>
       <NavbarHome/>
+      
     </div>
   )
 }
