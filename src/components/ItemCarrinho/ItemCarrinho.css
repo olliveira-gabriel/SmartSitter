@@ -1,0 +1,73 @@
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+  
+  .item-imagem {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    flex-shrink: 0;
+  }
+  
+  .item-detalhes {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .item-nome {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333; /* Cor do texto ajustada */
+    margin: 0;
+    display: block; /* Garante que não se quebre estranhamente */
+  }
+  
+  .item-preco {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #333; /* Cor do texto ajustada */
+  }
+  
+  .item-acoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .item-quantidade {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 5px;
+    font-size: 1rem;
+    -moz-appearance: textfield; /* Para Firefox */
+  }
+  
+  .item-quantidade::-webkit-outer-spin-button,
+  .item-quantidade::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .item-remover {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .item-remover:hover {
+    transform: scale(1.1);
+  }

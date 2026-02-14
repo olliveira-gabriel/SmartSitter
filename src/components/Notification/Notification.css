@@ -1,0 +1,56 @@
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1050; /* Garante que fique acima de outros elementos */
+    min-width: 250px;
+    max-width: 400px;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .notification-container.success {
+    background-color: #4CAF50; /* Verde */
+  }
+  
+  .notification-container.error {
+    background-color: #f44336; /* Vermelho */
+  }
+  
+  .notification-message {
+    margin-right: 20px;
+    font-size: 15px;
+  }
+  
+  .notification-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0;
+  }
+  
+  .notification-close-btn:hover {
+    opacity: 1;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(110%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

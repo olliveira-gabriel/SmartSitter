@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.carrinho-bg {
+  min-height: 100vh;
+  background-color: #EEF4F5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.carrinho-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.carrinho-header {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 15px;
+}
+
+.carrinho-header h1 {
+  font-weight: 600;
+  margin: 0;
+  color: #333; /* Cor do Título */
+}
+
+.carrinho-header p {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.carrinho-vazio {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.carrinho-vazio p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-ver-produtos {
+  background-color: #6CBBD8 !important;
+  border: none !important;
+  padding: 10px 25px;
+  font-weight: 500;
+}
+
+.lista-itens {
+  background-color: transparent;
+}
+
+.resumo-pedido {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 100px;
+}
+
+.resumo-pedido h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333; /* --- COR AJUSTADA --- */
+}
+
+.resumo-linha {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #333; /* --- COR AJUSTADA --- */
+}
+
+.btn-finalizar {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.btn-limpar {
+    font-weight: 500;
+}

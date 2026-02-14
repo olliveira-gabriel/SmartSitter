@@ -1,5 +1,6 @@
 import React from 'react';
-import CardsProdutos from '../CardsProdtuos/ContainerProdutos.jsx';
+// A CORREÇÃO FINAL ESTÁ AQUI: O nome da pasta era "CardsProdtuos"
+import CardsProdutos from '../CardsProdtuos/ContainerProdutos.jsx'; 
 import { Container, Row, Col } from 'react-bootstrap';
 import './SectionProdutos.css';
 import ImgApp from '../../assets/Img/App.png';
@@ -21,7 +22,7 @@ function SectionProdutos() {
                 }
                 TamanhoProduto="0MB"
                 TituloBotao="Comprar"
-                DestinoBotao=""
+                DestinoBotao="/produto" 
                 />
             </Col>
             <Col md={1} className="text-center d-flex align-items-center justify-content-center">
